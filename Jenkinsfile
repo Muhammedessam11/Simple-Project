@@ -22,12 +22,5 @@ pipeline {
                 '''
             }
         }
-        
-        stage('Run Ansible Playbook') {
-            steps {
-                // Execute Ansible playbook
-                sh 'ansible-playbook ansible-playbook.yml'
-            }
-        }
     }
 }
